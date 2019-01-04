@@ -23,7 +23,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[test.md](test.md) and ![Image](src)
+[test.md](https://github.com/belowthetree/belowthetree.github.io/blob/master/test.md) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
