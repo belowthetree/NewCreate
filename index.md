@@ -25,7 +25,7 @@ Syntax highlighted code block
 
 [test.md](https://github.com/belowthetree/belowthetree.github.io/blob/master/test.md) and ![Image](src)
 ```
-[test.md](docs/page1.html)
+[test.md](docs/养生.html)
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
