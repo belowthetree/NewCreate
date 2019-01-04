@@ -1,0 +1,87 @@
+#header1{
+	background-color: #ECDAE6;
+	height: 500px;
+	width: auto;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
+}
+#heal{
+	position: absolute;
+	color: #A4D9F8;
+	float: center;
+	font-size: 150px;
+	padding: 150px;
+	margin: 0;
+	text-align: center;
+	transition: 1s;
+	padding-left: 600px;
+}
+#div_tag{
+	width: 200px;
+	font-family: "times new roman";
+	
+}
+#heal:hover{
+	font-size: 200px;
+	padding: 100px;
+	padding-left: 450px;
+}
+.tag{
+	padding: 0;
+	margin: 5px;
+	margin-left: 0;
+	width: 200px;
+	transition: width 1s;
+}
+a{
+	text-decoration: none;
+	color: beige;
+	content: 0;
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	transition: width 1s;
+}
+a:hover{
+	width: 300px;
+}
+.tag:hover{
+	width: 300px;
+}
+#物理{
+	text-align: center;
+	height: 60px;
+	background-color: #DB9D8A;
+}
+#艺术{
+	text-align: center;
+	height: 60px;
+	background-color: #66372C;
+}
+#哲学{
+	text-align: center;
+	height: 60px;
+	background-color: #A6391F;
+}
+#计算机{
+	text-align: center;
+	height: 60px;
+	background-color: #E17992;
+}
+#化学{
+	text-align: center;
+	height: 60px;
+	background-color: #E46070;
+}
+#生物化学{
+	text-align: center;
+	height: 60px;
+	background-color: #B32B58;
+}
+#轮机{
+	text-align: center;
+	height: 60px;
+	background-color: #288C8A;
+}
