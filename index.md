@@ -6,5 +6,5 @@
 ```
 
 <div>
-	[个人博客](docs/养生.html)
+	.[个人博客](docs/养生.html)
 </div>
