@@ -1,0 +1,26 @@
+footer{
+	border: ridge;
+	background-color: antiquewhite;
+}
+header{
+	border: solid;
+	box-shadow:1px 1px 3px #292929;
+	background-image: url('QQ截图20181202143810.png');
+	background-origin: padding-box;
+	padding: 20px;
+}
+center{
+	border: double;
+	border-width: 15px;
+	outline: red dotted;
+	border-radius: 20px;
+	transition: 2s;
+}
+div{
+	width: 30px;
+	background-color: aqua;
+	transition: 2s;
+}
+div:hover{
+	width: 300px;
+}
