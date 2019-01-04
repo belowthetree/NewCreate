@@ -1,9 +1,0 @@
-<!DOCTYPE>
-<html>
-  <head>
-    <title>HHH</title>
-  </head>
-  <body>
-  <h1>HHH</h1>
-  </body>
-</html>
