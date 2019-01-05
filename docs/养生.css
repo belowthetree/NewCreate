@@ -1,88 +1,42 @@
-#header1{
-	background-color: #ECDAE6;
-	height: 500px;
+#header{
+	background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
 	width: auto;
 	background-size: cover;
-	padding: 0;
-	margin: 0;
+	padding: 5rem 6rem;
 }
-#heal{
-	margin: auto;
-	position: absolute;
-	color: #A4D9F8;
-	float: center;
-	font-size: 150px;
-	padding: 150px;
-	margin: 0;
+#head{
 	text-align: center;
-	transition: 1s;
-	padding-left: 600px;
+	color: #A4D9F8;
+	font-size: 150px;
+	margin: auto;
 }
-#div_tag{
-	width: 200px;
-	font-family: "times new roman";
-	
+
+.container{
+	margin: auto;
+	text-align: center;
 }
-#heal:hover{
-	font-size: 200px;
-	padding: 100px;
-	padding-left: 500px;
-}
-.tag{
-	padding: 0;
-	margin: 5px;
-	margin-left: 0;
-	width: 200px;
-	transition: width 1s;
-}
+
 a{
+	position: fixed;
+	border-top: #292929 solid 3px;
+	border-bottom: #292929 solid 3px;
 	text-decoration: none;
-	color: beige;
-	content: 0;
-	font-size: 40px;
-	margin: 0;
-	padding: 0;
-	width: 200px;
-	transition: width 1s;
+	color: #292929;
+	font-size: 60px;
+	transition: font-size 0.5s;
 }
 a:hover{
-	width: 300px;
+	font-size:80px;
 }
-.tag:hover{
-	width: 300px;
+
+div.contain{
+	box-sizing: border-box;
+	width: 100%;
+	float: left;
 }
-#物理{
-	text-align: center;
-	height: 60px;
-	background-color: #DB9D8A;
-}
-#艺术{
-	text-align: center;
-	height: 60px;
-	background-color: #66372C;
-}
-#哲学{
-	text-align: center;
-	height: 60px;
-	background-color: #A6391F;
-}
-#计算机{
-	text-align: center;
-	height: 60px;
-	background-color: #E17992;
-}
-#化学{
-	text-align: center;
-	height: 60px;
-	background-color: #E46070;
-}
-#生物化学{
-	text-align: center;
-	height: 60px;
-	background-color: #B32B58;
-}
-#轮机{
-	text-align: center;
-	height: 60px;
-	background-color: #288C8A;
+.tag{
+	float: left;
+	box-sizing: border-box;
+	width: 5%;
 }
