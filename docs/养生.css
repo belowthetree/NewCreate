@@ -18,7 +18,6 @@
 }
 
 a{
-	position: fixed;
 	border-top: #292929 solid 3px;
 	border-bottom: #292929 solid 3px;
 	text-decoration: none;
@@ -36,7 +35,7 @@ div.contain{
 	float: left;
 }
 .tag{
+	position: fixed;
 	float: left;
-	box-sizing: border-box;
-	width: 5%;
+	width: 500px;
 }
