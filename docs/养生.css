@@ -39,3 +39,9 @@ div.contain{
 	float: left;
 	width: 500px;
 }
+
+.Info{
+	box-sizing: border-box;
+	width: 170%;
+	float: left;
+}
