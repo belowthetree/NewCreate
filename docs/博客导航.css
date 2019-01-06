@@ -67,6 +67,7 @@ h1{
 	background-color: #f3f6fa;
 	text-align: left;
 	color: #606c71;
+	box-shadow: -10px 10px 5px darkgray;
 }
 p{
 	font-size: 40px;
