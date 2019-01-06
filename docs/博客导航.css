@@ -9,11 +9,12 @@
 	font-family: "times new roman";
 	text-align: center;
 	color: #A4D9F8;
-	font-size: 100px;
+	font-size: 70px;
 	margin: auto;
 }
 
 .container{
+	width: 70%;
 	margin: auto;
 	text-align: center;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,11 +25,11 @@ a{
 	border-bottom: skyblue solid 2px;
 	text-decoration: none;
 	color: #159957;
-	font-size: 30px;
+	font-size: 20px;
 	transition: font-size 0.5s;
 }
 a:hover{
-	font-size:40px;
+	font-size:25px;
 }
 
 div.contain{
@@ -44,6 +45,7 @@ div.contain{
 }
 
 .Info{
+	padding-top: 150px;
 	box-sizing: border-box;
 	width: 20%;
 	float: right;
@@ -59,7 +61,7 @@ img{
 	float: left;
 }
 h1{
-	font-size: 60px;
+	font-size: 40px;
 }
 #text{
 	padding: 10px;
