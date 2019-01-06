@@ -54,6 +54,8 @@ img{
 }
 
 .blog{
+	box-sizing: border-box;
+	width: 60%;
 	float: left;
 }
 h1{
