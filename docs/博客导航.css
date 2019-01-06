@@ -18,10 +18,10 @@
 }
 
 a{
-	border-top: #292929 solid 3px;
-	border-bottom: #292929 solid 3px;
+	border-top: skyblue solid 2px;
+	border-bottom: skyblue solid 2px;
 	text-decoration: none;
-	color: #292929;
+	color: #159957;
 	font-size: 60px;
 	transition: font-size 0.5s;
 }
@@ -31,16 +31,46 @@ a:hover{
 
 div.contain{
 	box-sizing: border-box;
-	width: 100%;
+	width: 50%;
 	float: left;
 }
 .tag{
-	position: fixed;
+	box-sizing: border-box;
+	padding-top: 300px;
+	width: 25%;
 	float: left;
-	width: 500px;
 }
 
 .Info{
 	box-sizing: border-box;
+	width: 25%;
 	float: right;
+}
+
+img{
+	float: right;
+}
+
+.blog{
+	float: left;
+}
+h1{
+	font-size: 80px;
+}
+#text{
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #f3f6fa;
+	text-align: left;
+	color: #606c71;
+}
+p{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#footer{
+	margin: 50px;
+	font-size: 50px;
+	background-color: beige;
 }
