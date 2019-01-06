@@ -9,7 +9,7 @@
 	font-family: "times new roman";
 	text-align: center;
 	color: #A4D9F8;
-	font-size: 150px;
+	font-size: 100px;
 	margin: auto;
 }
 
@@ -24,11 +24,11 @@ a{
 	border-bottom: skyblue solid 2px;
 	text-decoration: none;
 	color: #159957;
-	font-size: 60px;
+	font-size: 30px;
 	transition: font-size 0.5s;
 }
 a:hover{
-	font-size:80px;
+	font-size:40px;
 }
 
 div.contain{
@@ -38,7 +38,7 @@ div.contain{
 }
 .tag{
 	box-sizing: border-box;
-	padding-top: 200px;
+	padding-top: 150px;
 	width: 20%;
 	float: left;
 }
@@ -59,7 +59,7 @@ img{
 	float: left;
 }
 h1{
-	font-size: 80px;
+	font-size: 60px;
 }
 #text{
 	padding: 10px;
@@ -67,16 +67,15 @@ h1{
 	background-color: #f3f6fa;
 	text-align: left;
 	color: #606c71;
-	box-shadow: -10px 10px 5px darkgray;
+	box-shadow: -6px 6px 5px darkgray;
 }
 p{
-	font-size: 40px;
+	font-size: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
 #footer{
 	margin: 50px;
-	font-size: 50px;
-	background-color: beige;
+	font-size: 20px;
 }
