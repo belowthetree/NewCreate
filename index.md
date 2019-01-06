@@ -6,6 +6,4 @@
 ```
 
 <link rel="icon" type="image/x-icon" href="tree.ico"/>
-<font size=30>
 .[个人博客](docs/博客导航.html)
-</font>
