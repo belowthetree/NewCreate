@@ -42,6 +42,5 @@ div.contain{
 
 .Info{
 	box-sizing: border-box;
-	width: 170%;
-	float: left;
+	float: right;
 }
