@@ -6,6 +6,7 @@
 	padding: 5rem 6rem;
 }
 #head{
+	font-family: "times new roman";
 	text-align: center;
 	color: #A4D9F8;
 	font-size: 150px;
@@ -15,6 +16,7 @@
 .container{
 	margin: auto;
 	text-align: center;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a{
@@ -31,19 +33,19 @@ a:hover{
 
 div.contain{
 	box-sizing: border-box;
-	width: 50%;
+	width: 60%;
 	float: left;
 }
 .tag{
 	box-sizing: border-box;
 	padding-top: 300px;
-	width: 25%;
+	width: 20%;
 	float: left;
 }
 
 .Info{
 	box-sizing: border-box;
-	width: 25%;
+	width: 20%;
 	float: right;
 }
 
@@ -65,6 +67,7 @@ h1{
 	color: #606c71;
 }
 p{
+	font-size: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
 }
