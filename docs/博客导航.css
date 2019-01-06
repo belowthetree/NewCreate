@@ -1,0 +1,47 @@
+#header{
+	background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+	width: auto;
+	background-size: cover;
+	padding: 5rem 6rem;
+}
+#head{
+	text-align: center;
+	color: #A4D9F8;
+	font-size: 150px;
+	margin: auto;
+}
+
+.container{
+	margin: auto;
+	text-align: center;
+}
+
+a{
+	border-top: #292929 solid 3px;
+	border-bottom: #292929 solid 3px;
+	text-decoration: none;
+	color: #292929;
+	font-size: 60px;
+	transition: font-size 0.5s;
+}
+a:hover{
+	font-size:80px;
+}
+
+div.contain{
+	box-sizing: border-box;
+	width: 100%;
+	float: left;
+}
+.tag{
+	position: fixed;
+	float: left;
+	width: 500px;
+}
+
+.Info{
+	box-sizing: border-box;
+	width: 170%;
+	float: left;
+}
