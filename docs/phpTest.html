@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form>
+			<select multiple="multiple" name="q[]">
+				<option value ="op1">选择1</option>
+				<option value ="op2">选项2</option>
+				<option value ="op3">选项3</option>
+			</select>
+			<input type="submit" value="提交">
+			
+			
+			<form action="upload_file.php" method="post" enctype="multipart/form-data">
+				<label for="file">文件名：</label>
+				<input type="file" name="file" id="file"><br>
+				<input type="submit" name="submit" value="提交">
+			</form>
+		</form>
+	</body>
+</html>
