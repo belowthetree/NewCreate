@@ -1,5 +1,5 @@
 ```markdown
-用于分享Tensorflow的一些经验和案例
+用于分享学习Tensorflow的一些经验和案例
 欢迎大佬分享指点
 ```
 <html>
