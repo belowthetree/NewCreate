@@ -8,7 +8,9 @@
 
 [Tensorflow基本概念（待更新呢）](Tensorflow/Tensorflow基本理解.md)
 
+[MNIST手写字入门](Tensorflow/MNIST手写字识别.md)
+
 ## Tensorflow案例
 >学习案例的话首先还是要借助一下抄能力，然后慢慢致敬
 
-[MNIST手写字入门](Tensorflow/MNIST手写字识别.md)
+

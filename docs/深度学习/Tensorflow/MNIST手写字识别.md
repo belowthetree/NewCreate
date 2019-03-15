@@ -64,9 +64,42 @@ h1_fc = tf.nn.relu(tf.matmul(h2_pool_flat,w1_fc) + b1_fc)
 利用的是矩阵的映射功能（别的篇章会解释）。
 
 ```
+keep_prob = tf.placeholder(tf.float32)
+drop_out = tf.nn.dropout(h1_fc,keep_prob)
+
+w2_fc = weight_init([1024,10])
+b2_fc = biase_init([10])
+y_predict = tf.nn.softmax(-tf.matmul(drop_out,w2_fc) + b2_fc)
+```
+这里设置一个系数keep_prob（百分比），保留比例为keep_prob的数据，用来防止过拟合。
+矩阵乘法将数据变为1024X10，最后用softmax将矩阵整合成10个元素（分别代表0~10）的数组输出。
+```
+cross_entropy = tf.reduce_mean(-tf.reduce_sum(y*tf.log(y_predict),reduction_indices=[1]))
+train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)
+
+correct_prediction = tf.equal(tf.argmax(y_predict,1),tf.argmax(y,1))
+accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
+```
+cross_entropy是损失函数，这里采用的是对数函数，因为输出的结果是概率，在0~1之间，对数函数能放大误差。
+接着是tf.argmax()，作用是求出数组中最大的元素的下标，其他函数看函数名就知道作用了。
+```
+for i in range(20000):
+    batch = mnist.train.next_batch(50)
+    if i%100 == 0:
+        x_batch, y_batch = mnist.test.next_batch(100)
+        train_accuracy = accuracy.eval(feed_dict = {x:x_batch,y:y_batch,keep_prob:1.0})
+        print("train step %d, accuracy is : %g"%(i,train_accuracy))
+
+    train_step.run(feed_dict = {x:batch[0],y:batch[1],keep_prob:0.5})
+```
+这里的循环稍微解释一下，在`if i%100 == 0:`里用accuracy.eval()函数计算accuracy是不会进行训练的，
+但是用sess.run()会。然后里面的keep_prob设置成1，表示保留所有数据，因为这里是检验正确率，所以不需要
+忽略数据。
+
+```
 import tensorflow as tf
 import tensorflow.examples.tutorials.mnist.input_data as data
-mnist = data.read_data_sets("data/fashion",one_hot = True)
+mnist = data.read_data_sets("MNSIT_data/",one_hot = True)#这里是调用自带的函数下载数据
 sess = tf.InteractiveSession()
 
 def weight_init(shape):
@@ -118,13 +151,8 @@ train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)
 correct_prediction = tf.equal(tf.argmax(y_predict,1),tf.argmax(y,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
 
-writer=tf.summary.FileWriter(r"./tensorboard",tf.get_default_graph())
-saver = tf.train.Saver()
-tf.summary.scalar('accuracy',accuracy)
-tf.summary.scalar('loss',loss)
 
 tf.global_variables_initializer().run()
-saver = tf.train.Saver()
 
 for i in range(20000):
     batch = mnist.train.next_batch(50)
@@ -132,26 +160,11 @@ for i in range(20000):
         x_batch, y_batch = mnist.test.next_batch(100)
         train_accuracy = accuracy.eval(feed_dict = {x:x_batch,y:y_batch,keep_prob:1.0})
         print("train step %d, accuracy is : %g"%(i,train_accuracy))
-        saver.save(sess, './tensorboard')
 
     train_step.run(feed_dict = {x:batch[0],y:batch[1],keep_prob:0.5})
 
-#print("accuracy is %g"%accuracy.eval(feed_dict = {x:mnist.test.images,y:mnist.test.labels,keep_prob:1.0}))
-#attention!!!
-#if we use full test data to figure out the rate, it will probably exceed system memory
-#batch = mnist.test.next_batch(5000)
-#print("accuracy is %g"%accuracy.eval(feed_dict = {x:batch[0],y:batch[1],keep_prob:1.0}))
-
-x_batch, y_batch = mnist.test.next_batch(100)
+x_batch, y_batch = mnist.test.next_batch(500)
 train_accuracy = accuracy.eval(feed_dict = {x:x_batch,y:y_batch,keep_prob:1.0})
-print("train step %d, accuracy is : %g"%(i,train_accuracy))
+print("Final accuracy is : %g"%(train_accuracy))
 
-saver.save(sess,"./model/normalCNN/model.ckpt")
-sum = 0.0
-for i in range(500):
-    t = mnist.test.next_batch(100)
-    a = accuracy.eval({x:t[0],y:t[1],keep_prob:1.0})
-    sum += a
-    print("result is :%g"%a)
-print("average accuracy is :%g"%(sum/500))
 ```
