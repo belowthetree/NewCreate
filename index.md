@@ -23,7 +23,7 @@
 
 ---
 # 深度学习内容
-[搞了一个边缘计算算法]()
+[搞了一个边缘计算算法](https://github.com/belowthetree/bianyuansuanfa/blob/master/README.md)
 
 .[Tensorflow](docs/深度学习/Tensorflow.html)
 
