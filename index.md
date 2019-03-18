@@ -35,6 +35,8 @@
 
 [虚幻4](docs/游戏开发/虚幻4.md)
 
+[FairyGUI](docs/FairyGUI.md)
+
 ---
 # 网站开发
 [案例](docs/案例/案例导航.md)
