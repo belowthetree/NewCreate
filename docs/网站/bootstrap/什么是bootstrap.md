@@ -12,25 +12,9 @@ bootstrap是一个前端开发框架。对于开发前端的人来说，bootstra
 ```
 这个是官方提供的一个在线的引用样式表，不需要你下载就可以直接用。
 
-然后随意编辑一个网页
+然后随意编辑一个按钮
 ```
-<table class="table table-striped table-bordered table-hover table-condensed">
-	<tr>
-		<th>Header</th>
-		<th>Header1</th>
-		<th>Header2</th>
-	</tr>
-	<tr class="table-success">
-		<td>Data</td>
-		<td>Data1</td>
-		<td>Data2</td>
-	</tr>
-	<tr class="success">
-		<td>Data</td>
-		<td>Data1</td>
-		<td>Data2</td>
-	</tr>
-</table>
+<button class="btn btn-primary">按钮</button>
 ```
 然后你会得到
 <html>
