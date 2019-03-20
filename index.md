@@ -21,6 +21,8 @@
 
 .[动态规划](docs/计算机安全/动态规划.md)
 
+.[补码理解](docs/计算机安全/动态规划.md)
+
 ---
 # 深度学习内容
 [搞了一个边缘计算算法](https://github.com/belowthetree/bianyuansuanfa/blob/master/README.md)
