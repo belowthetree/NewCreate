@@ -23,6 +23,8 @@
 
 .[补码理解](docs/计算机安全/补码理解.md)
 
+.[CacheLab实验进度](docs/计算机安全/CacheLab实验.md)
+
 ---
 # 深度学习内容
 [搞了一个边缘计算算法](https://github.com/belowthetree/bianyuansuanfa/blob/master/README.md)
