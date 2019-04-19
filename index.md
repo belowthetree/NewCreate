@@ -25,7 +25,7 @@
 
 .[第六章-存储器层次结构](docs/计算机安全/第六章-存储器层次结构.md)
 
-.[CacheLab实验进度](docs/计算机安全/CacheLab实验.md)
+.[CacheLab实验](docs/计算机安全/CacheLab实验.md)
 
 ---
 # 深度学习内容
