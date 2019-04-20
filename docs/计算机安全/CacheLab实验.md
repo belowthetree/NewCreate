@@ -50,7 +50,78 @@ void update(){
 Load是读取内存，如果对应的内存没有值，即valid==0，那么就hits++，并且再将它的valid重新置为1。
 ```
 void Load(long addr){
-	
+	update();
+	long mask = 0;
+	mask = ((~mask)<<(s+e))|(~((~mask)<<e));
+	long set = addr&mask;
+	mask = 0;
+	mask = ~((~mask)<<(e+s));
+	long tag = mask&addr;
+	if(cache[set*e+tag].valid==0){
+		if(v)
+			printf("miss\n");
+		misses++;
+		cache[set*e+tag].valid=1;
+		cache[set*e+tag].time=0;
+	}
+	else{
+		if(v)
+			printf("hit\n");
+		hits++;
+		cache[set*e+tag].time=0;
+	}
+}
+```
+
+## Store函数
+```
+void Store(long addr){
+	update();
+	long mask = 0;
+	mask = ((~mask)<<(s+e))|(~((~mask)<<e));
+	long set = addr&mask;
+	mask = 0;
+	mask = ~((~mask)<<(e+s));
+	long tag = mask&addr;
+	if(cache[set*e+tag].valid==1){
+		if(v)
+			printf("miss\n");
+		misses++;
+		int i, t = 0;
+		for(i = 0;i < S;i++){
+			int j;
+			for(j = 0;j < e;j++){
+				if(cache[i*e+j].valid==0){
+					t = 1;
+					cache[i*e+j].time=0;
+					cache[i*e+j].valid=1;
+					goto A;
+				}
+			}
+		}
+		A:;
+		if(t){
+			if(v){
+				printf("evition\n");
+			}
+			int time = 0;
+			for(i = 0;i < S;i++){
+				int j;
+				for(j = 0;j < e;j++){
+					if(cache[i*e+j].time>cache[time].time){
+						time = i*e+j;
+					}
+				}
+			}
+			cache[time].time = 0;
+		}
+	}
+	else{
+		if(v)
+			printf("hit\n");
+		hits++;
+		cache[set*e+tag].time=0;
+	}
 }
 ```
 
