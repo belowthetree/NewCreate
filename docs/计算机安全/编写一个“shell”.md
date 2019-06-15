@@ -1,8 +1,8 @@
 # shell是什么
 shell是linux、unix系统中的一个命令行交互工具，可以方便得通过shell在命令行中执行各种命令。这次通过配置系统自带的bash这个shell的路径来启动我们自己的shell。
 
-＃＃配置路径
-首先打开~/.bashrc这个文件，然后在最底下加入`export PATH="direction:$PATH"，其中的direction是你的程序的路径。
+## 配置路径
+首先打开~/.bashrc这个文件，然后在最底下加入`export PATH="direction:$PATH"`，其中的direction是你的程序的路径。
 
 ## 读取命令
 ```
