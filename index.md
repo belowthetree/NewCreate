@@ -27,6 +27,8 @@
 
 .[CacheLab实验](docs/计算机安全/CacheLab实验.md)
 
+.[编写shell](docs/计算机安全/编写一个“shell”.md)
+
 ---
 # 深度学习内容
 [搞了一个边缘计算算法](https://github.com/belowthetree/bianyuansuanfa/blob/master/README.md)
