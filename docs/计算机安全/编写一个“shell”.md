@@ -5,7 +5,7 @@ shell是linux、unix系统中的一个命令行交互工具，可以方便得通
 首先打开~/.bashrc这个文件，然后在最底下加入`export PATH="direction:$PATH"，其中的direction是你的程序的路径。
 
 ## 读取命令
-｀｀｀
+```
 char comm[100];
 cout<<"-> shell ";
 while(cin>>comm){
@@ -20,13 +20,13 @@ while(cin>>comm){
                exit(EXIT_FAILURE);
          }
    }
-｀｀｀
+```
 
 命令的读取需要用char*类型，方便分割转移。
 
 
 ## 命令的执行
-｀｀｀
+```
 void exec_cmd(char **arg_vec)
 {
     int   status;
@@ -46,6 +46,6 @@ void exec_cmd(char **arg_vec)
             ;
     }
 }
-｀｀｀
+```
 
 调用系统带的exec系函数执行读取到的指令。
